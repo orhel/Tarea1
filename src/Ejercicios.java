@@ -13,36 +13,36 @@ public class Ejercicios
 	//nota: solo aceptan minusculas
 	static String obtenerPrecio(int lempiras)
 	{
-		if(lempiras==0) return "gratis";
-		else if(lempiras<100) return "barato";
-		else if(lempiras<200) return "normal";
-		return "caro";
+		if(lempiras==0) return "gratis"; //Cuando lempiras es 0
+		else if(lempiras<100) return "barato";//cuando lempiras es menor que 100
+		else if(lempiras<200) return "normal";//cuando lempiras es menor que 200
+		return "caro";//cuando lempiras es mayor que 200
 	}
 	
 	//devuelve el factorial de "num"
 	static int factorial(int num)
 	{
-		if(num==1)return 1;
-        else num=num*factorial(num-1);
+		if(num==1)return 1;//cuando numero sea 1, devuelve 1
+        else num=num*factorial(num-1);//cuando numero es mayor que 1
         return num;
 	}
 	
 	//devuelve el elemento de "arr" en la posicion "pos"
 	static int getElemento(int arr[],int pos)
 	{
-		return arr[pos];
+		return arr[pos];//devuelve la posicion indicada
 	}
 	
 	//devuelve el elemento de "arr" en la posicion ["col"] ["fila"]
 	static int getElemento(int arr[][],int col,int fila)
 	{
-		return arr[col][fila];
+		return arr[col][fila];//devuelve la posicion indicada
 	}
 	
 	//devuelve el atributo "x" de "MiClase"
 	static int getX(MiClase mi_clase)
 	{
-		return mi_clase.x;
+		return mi_clase.x;//devuelve el atributo x
 	}
 	
 	//implementar la funcion "getXPor2()" descrita en la clase "MiClase"
@@ -63,9 +63,9 @@ public class Ejercicios
 	//nota: puedes consultar la funcion en http://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci
 	static int fibonacci(int num)
 	{
-		if(num==1) return 1;
-		else if (num==0) return 0;
-		return fibonacci(num-1) + fibonacci(num-2);
+		if(num==1) return 1;//devuelve 1 si el numero es 1
+		else if (num==0) return 0;//devuelve 0 si el numero es 0
+		return fibonacci(num-1) + fibonacci(num-2);//formula para el fibonacci de los numeros mayores que 1
 	}
 	
 	//realizar la siguiente funcion recursiva:
@@ -73,9 +73,9 @@ public class Ejercicios
 	//donde: funcionRecursiva(0) = 1 y funcionRecursiva(1) = 2
 	static int funcionRecursiva(int num)
 	{
-		if(num==0) return 1;
-		else if(num==1) return 2;
-		return funcionRecursiva(num-1)*2+1;
+		if(num==0) return 1;//si numero es 0 devuelve 1
+		else if(num==1) return 2;//si numero es igual a 1 devuelve 2
+		return funcionRecursiva(num-1)*2+1;//formula de la funcion recursiva
 	}
 	
 	public static void main(String[] args)
